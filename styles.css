@@ -1,0 +1,250 @@
+html {
+  cursor: url('Assets/Layer_1-1.png'),auto;
+ }
+ 
+
+
+body {
+    background-color:black;
+    font-family: 'Press Start 2P','cursive';
+
+}
+
+.p1 {
+  font-family: 'Crimson Text', 'serif';
+}
+
+.p2 {
+  font-family: 'Crimson Text', 'serif';
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-top: -600px;
+  max-width: max-content;
+  text-align: center;
+  line-height: 2;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 90px;
+  margin-left: 10px;
+  margin-top: 250px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 80px;
+  margin-left: 10px;
+  margin-top: 250px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-top: 320px;
+  text-align: center;
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 100px;
+  margin-left: 5px;
+  margin-top: -10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h6 {
+  color: #ffffff;
+  font-size: 90px;
+  margin-left: -10px;
+  margin-top: -10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h7 {
+  color: #ffffff;
+  font-size: 80px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.p1 {
+  color: #ffffff;
+  font-size:50px;
+  font-style: bold;
+  margin-top: 5px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.p2 {
+  color: #ffffff;
+  font-size:40px;
+  margin-top: 2px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+  /*  MORE START */
+.more{
+    margin-left: 1350px;
+  }
+  /* MORE END */
+
+/*  GACHA START */
+.gacha{
+
+  margin-left: 580px;
+}
+/* GACHA END */
+
+/*  SIDENAV START */
+box {
+  margin:0;
+  right:0;
+  box-sizing: border-box;
+  font-family:'Press Start 2P','cursive';
+}
+.container{
+  height: 100%;
+  width: 250%;
+  position: fixed;
+  background: #ffffff;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+ol{
+  width:100%;
+}
+ol li{
+  display:block;
+  width: 80%;
+}
+ol li a{
+  color:#ffffff; 
+  padding: 18px 135px;
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+ol li a i{
+  width: 70px;
+  font-size: 25px;
+  text-align: center;
+  padding-right: 30px;
+}
+ol li:hover a{
+  background: #e01eda;
+  color:#ffffff;
+  letter-spacing: 5px;
+}
+span {
+  position: absolute;
+  right: 41px;
+  top: 11px;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 3px 8px;
+  cursor: pointer;
+  background: #000000;
+}
+#bars{
+  background: #ffffff;
+}
+#check:checked ~ .container{
+     transform:translatex(0);
+}
+#check:checked ~ .container #bars{
+  display:none;
+}
+
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+}
+label #btn{
+  right: 10px;
+  top: 25px;
+  font-size: 35px;
+  color: #ffffff;
+}
+       
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #161616;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 36px 175px 20px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 45px;
+}
+
+#toggleNav:checked ~ #mySidenav {
+  width: 250px;
+}
+
+#hamburger {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#toggleNav {
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
